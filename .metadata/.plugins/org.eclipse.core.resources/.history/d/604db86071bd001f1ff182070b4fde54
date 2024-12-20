@@ -1,0 +1,22 @@
+package com.suraj;
+
+import java.util.List;
+
+
+public class StudentMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ApplicationContext context=new AnnotationConfigApplicationContext("com.suraj")
+
+        // Get the Student bean
+        Student student = context.getBean(Student.class);
+
+        // Call methods
+        student.printDetails();
+        List<String> courses = student.showCourses();
+        System.out.println("Courses: " + courses);
+
+	}
+
+}

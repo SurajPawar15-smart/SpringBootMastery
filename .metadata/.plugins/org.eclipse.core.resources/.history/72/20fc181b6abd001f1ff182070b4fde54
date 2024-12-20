@@ -1,0 +1,19 @@
+package com.suraj.training;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Employee {
+	private String employeeName;
+	
+	@Value("Kelvin")
+	public void setEmployeeName(String employeeName) {
+		this.employeeName = employeeName;
+	}
+	
+	public String greet() {
+		return "Welcome "+employeeName;
+	}
+
+}

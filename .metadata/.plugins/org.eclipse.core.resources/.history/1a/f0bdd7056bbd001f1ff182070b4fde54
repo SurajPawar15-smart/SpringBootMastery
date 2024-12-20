@@ -1,0 +1,12 @@
+package com.suraj.bookapp;
+
+@Service
+public class BookServiceImpl implements IBookService {
+
+	@Override
+	public List<String> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

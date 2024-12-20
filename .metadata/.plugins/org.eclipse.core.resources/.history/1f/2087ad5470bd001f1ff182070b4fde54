@@ -1,0 +1,18 @@
+package com.suraj;
+
+public class Student {
+private String studentName;
+private int studentId;
+private String city;
+
+public void printDetails() {
+	System.out.println("Name: " + studentName);
+    System.out.println("ID: " + studentId);
+    System.out.println("City: " + city);
+}
+
+public List<String> showCourses() {
+    return Arrays.asList("Java", "Spring Boot", "Microservices", "Hibernate");
+}
+
+}
