@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\Springbootmastery\SpringDependencyDemo"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -43,12 +44,15 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.shristi.dist"/>
 			<item value="com.suraj"/>
 			<item value="com.suraj.dist"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="SpringDependencyAutowired"/>
+			<item value="SpringDependencyDemo"/>
 			<item value="Assignment_01"/>
 			<item value="SpringBasics"/>
 		</list>
