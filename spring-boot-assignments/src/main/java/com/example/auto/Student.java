@@ -1,6 +1,4 @@
 package com.example.auto;
-
-import java.awt.Choice;
 import java.util.Arrays;
 import java.util.List;
 

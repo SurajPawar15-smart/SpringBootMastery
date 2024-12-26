@@ -44,13 +44,17 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.spring.setter"/>
 			<item value="com.shristi.dist"/>
 			<item value="com.suraj"/>
 			<item value="com.suraj.dist"/>
 		</list>
 		<list key="name">
+			<item value="com.example"/>
 		</list>
 		<list key="artifactId">
+			<item value="Assignment02"/>
+			<item value="Assignment_02"/>
 			<item value="SpringDependencyAutowired"/>
 			<item value="SpringDependencyDemo"/>
 			<item value="Assignment_01"/>
