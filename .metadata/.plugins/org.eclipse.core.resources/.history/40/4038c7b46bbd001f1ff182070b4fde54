@@ -1,6 +1,0 @@
-package com.suraj.bookapp;
-
-public interface IBookService {
-List<String> getAll();
-
-}
