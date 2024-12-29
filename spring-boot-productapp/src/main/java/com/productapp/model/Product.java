@@ -4,6 +4,7 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.NamedQuery;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
@@ -16,6 +17,9 @@ import lombok.ToString;
 @Data
 @Entity
 //@Table(name="product_details") to give a different table name 
+
+@NamedQuery(name = "getProductsByBrand",query = "from Product p where p.brand=?1")
+@NamedQuery(name="getByCatPrice",query="from Product p where p.category=?1 and p.price<?2")
 public class Product {
 	
 	@Column(length=30)

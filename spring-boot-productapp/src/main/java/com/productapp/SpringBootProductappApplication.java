@@ -20,24 +20,78 @@ public class SpringBootProductappApplication implements CommandLineRunner{
 	
 	@Override
 	public void run(String... args) throws Exception {
-		Product product=new Product("Mobile","Samsung","Electronics",2000);
+		//Product product=new Product("Mobile","Samsung","Electronics",2000);
 		//productService.addProduct(product);
 		
-		Product product1=new Product("Laptop","Dell","Electronics",20000);
-		productService.addProduct(product1);
+		//Product product1=new Product("Laptop","Dell","Electronics",20000);
+		//productService.addProduct(product1);
 		
-		productService.getAllProduct().forEach(System.out::println);
+//		productService.getAllProduct().forEach(System.out::println);
+//		
+//		System.out.println("By ID");
+//		Product nproduct=productService.getById(1);
+//		System.out.println(nproduct);
+//		
+//		System.out.println("Updating Product Data");
+//		nproduct.setPrice(9000);
+//		nproduct.setBrand("OnePlus");
+//		productService.updateProduct(nproduct);
 		
-		System.out.println("By ID");
-		Product nproduct=productService.getById(1);
-		System.out.println(nproduct);
 		
-		System.out.println("Updating Product Data");
-		nproduct.setPrice(9000);
-		nproduct.setBrand("OnePlus");
-		productService.updateProduct(nproduct);
+// create only product DTO objects to call add product and update product
 		
+//		Product product = new Product("Microphone", "Moana", "Electronics", 20000);
+//		productService.addProduct(product);
+//
+//		Product product1 = new Product("Television", "Samsung", "Electronics", 200000);
+//		productService.addProduct(product1);
+//		product1 = new Product("Head phones", "Samsung", "Electronics", 8000);
+//		productService.addProduct(product1);
+//		product1 = new Product("speakers", "Samsung", "Electronics", 2000);
+//		productService.addProduct(product1);
+//		product1 = new Product("head phones", "Bose", "Electronics", 5000);
+//		productService.addProduct(product1);
+//		product1 = new Product("Pencils", "Camlin", "Stationary", 200);
+//		productService.addProduct(product1);
+//		product1 = new Product("Pen", "Classmate", "Stationary", 500);
+//		productService.addProduct(product1);
+//		product1 = new Product("Color Pencils", "Camlin", "Stationary", 120);
+//		productService.addProduct(product1);
+
+//		System.out.println();
+//		productService.getAllProducts().forEach(System.out::println);
+//		System.out.println();
+//		
+//		System.out.println("Get by brand");
+//		productService.getByBrand("Samsung").forEach(System.out::println);
+//		
+//		System.out.println();
+//		System.out.println("Get by brand and name");
+//		productService.getByBrandNamecontains("Camlin","Pen").forEach(System.out::println);		
 		
+		System.out.println();
+//		System.out.println("Get by category");
+//		productService.getByCat("Electronics").forEach(System.out::println);
+//		
+//		System.out.println();
+//		System.out.println("Get by brand and price");
+//		productService.getByBrandPriceLess("Samsung", 10000).forEach(System.out::println);
+		
+//		System.out.println();
+//		System.out.println("Get by Lesser Price");
+//		productService.getByLesserPrice(30000).forEach(System.out::println);
+//		
+//		System.out.println();
+//		System.out.println("Get by category and name contains");
+//		productService.getByCategoryName("Electronics", "phones").forEach(System.out::println);
+//		
+		System.out.println();
+		System.out.println("Get by brand");
+		productService.getProductByBrand("Samsung").forEach(System.out::println);
+		
+		System.out.println();
+		System.out.println("Get by category and price less");
+		productService.getByCatPriceLess("Electronics", 20000).forEach(System.out::println);
 		
 		
 		
