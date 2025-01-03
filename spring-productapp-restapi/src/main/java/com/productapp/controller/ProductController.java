@@ -24,21 +24,21 @@ public class ProductController {
 		@Autowired
 		private IProductService productService;
 		
-	    //http:localhost:8080/product-api/v1/products
+	    //http://localhost:8080/product-api/v1/products
 		@PostMapping("/products")
 		void addProduct(@RequestBody ProductDTO productDTO) {
 			productService.addProduct(productDTO);
 		}
 		
-		//http:localhost:8080/product-api/v1/products
+		//http://localhost:8080/product-api/v1/products
 		@PutMapping("/products")
 		void updateProduct(@RequestBody ProductDTO product){
 			productService.updateProduct(product);
 		}
 		
-		//http:localhost:8080/product-api/v1/products/product-id/10
+		//http://localhost:8080/product-api/v1/products/product-id/10
 		@DeleteMapping("/products/product-id/{productId}")
-		void deleteProduct(@PathVariable int productId){
+		void deleteProduct(@PathVariable("productId") int productId){
 			productService.deleteProduct(productId);
 		}
 		
@@ -46,9 +46,9 @@ public class ProductController {
 		List<ProductDTO> getAllProducts(){
 			return productService.getAllProducts();
 		}
-		//http:localhost:8080/product-api/v1/products/product-id/10
+		//http://localhost:8080/product-api/v1/products/product-id/10
 		@GetMapping("/products/product-id/{productId}")
-		ProductDTO getById(@PathVariable int productId){
+		ProductDTO getById(@PathVariable("productId") int productId){
 			return productService.getById(productId);
 		}
 		

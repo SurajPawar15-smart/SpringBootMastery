@@ -68,7 +68,7 @@ public class ProductServiceImpl implements IProductService {
 			Product product =  productOpt.get();
 		   return mapper.convertToDTO(product);
 		}
-		return null;
+		throw new ProductNotFoundException("invalid id");
 	}
 
 	@Override
