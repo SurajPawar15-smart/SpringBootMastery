@@ -1,0 +1,21 @@
+================================================================================
+Day-15 Dockerize your Spring Boot App | 15 days to Spring Boot Mastery
+================================================================================
+
+docker images
+docker build -t surajp15/masterrepo:greetapi .
+docker images
+docker run --name greetcon -d -p 8082:8080 d4715e833f3e
+docker ps   
+
+See the output on browser:
+localhost:8082/greet/Suraj
+localhost:8082/show-books
+
+Push in Docker Hub:
+docker tag surajp15/masterrepo:greetapi surajp15/masterrepo:restapi
+docker push surajp15/masterrepo:restapi
+docker login
+
+My docker image now you can run anywhere:
+docker pull surajp15/masterrepo:restapi
